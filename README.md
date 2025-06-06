@@ -28,18 +28,18 @@ A full-stack web application that uses **Natural Language Processing (NLP)** to 
 ---
 
 ## Project Structure
-
+```
 resume_analyzer/
 ├── backend/
-│ ├── main.py # FastAPI backend logic
-│ └── venv/ # Python virtual environment (ignored)
+│ ├── main.py       # FastAPI backend logic
+│ └── venv/         # Python virtual environment (ignored)
 ├── frontend/
-│ ├── src/ # React components
+│ ├── src/          # React components
 │ ├── public/
 │ └── node_modules/ # Frontend dependencies (ignored)
 ├── .gitignore
 ├── README.md
-
+```
 
 ---
 
