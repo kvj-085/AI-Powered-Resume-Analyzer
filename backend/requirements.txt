@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pymongo
+transformers
+python-dotenv
+torch
+python-multipart

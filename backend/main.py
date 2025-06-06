@@ -4,8 +4,11 @@ from pymongo import MongoClient
 from typing import Dict
 import datetime
 import os
+from dotenv import load_dotenv
 
 app = FastAPI()
+
+load_dotenv()
 
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -21,7 +24,7 @@ app.add_middleware(
 # === SETUP ===
 
 # MongoDB URI 
-MONGO_URI = "mongodb+srv://august20born:ItQ48Dwiq6OHEtcB@resume-cluster.bevm76z.mongodb.net/?retryWrites=true&w=majority&appName=resume-cluster"
+MONGO_URI = os.getenv("MONGO_URI")
 
 # Connect to MongoDB
 client = MongoClient(MONGO_URI)

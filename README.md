@@ -36,7 +36,7 @@ resume_analyzer/
 ├── frontend/
 │ ├── src/          # React components
 │ ├── public/
-│ └── node_modules/ # Frontend dependencies (ignored)
+│ └── node_modules/     # Frontend dependencies (ignored)
 ├── .gitignore
 ├── README.md
 ```
@@ -92,11 +92,14 @@ Below is a screenshot showing the result of uploading a resume for analysis.
 
 ---
 
+
 ## Deployment & Docker
 
-This project has been **Dockerized** and is **deployed on a cloud platform**.
+This project has been **Dockerized** and is currently **deployed on the cloud using Render**.
 
-- Docker ensures consistent environments across development and production
-- Deployed using **Render** for smooth CI/CD and scalability
-- Uses **MongoDB Atlas** for secure, cloud-based resume data storage
+- Docker ensures consistent environments across local, staging, and production
+- Full deployment via **Render**, enabling automated CI/CD for backend and frontend
+- Uses **MongoDB Atlas** as a secure, cloud-hosted NoSQL database for resume storage
+- Environment variables like database credentials are securely managed via `.env` and Render's secret management
+
 
