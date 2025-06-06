@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #eee;
+}
+
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+input[type="file"] {
+  margin: 1rem;
+}
+
+button {
+  background-color: #5e60ce;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  margin: 0.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #4ea8de;
+}
+
+.result {
+  background-color: #1e1e1e;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 0.3rem;
+  border-bottom: 1px solid #333;
+}
+
+strong {
+  color: #ffd60a;
+}
