@@ -1,21 +1,22 @@
 services:
   - type: web
-    name: resume-backend
-    env: docker
-    repo: https://github.com/kvj-085/AI-Powered-Resume-Analyzer
-    region: oregon
-    branch: main
-    rootDir: backend
-    plan: free
-    envVars:
-      - key: MONGO_URI
-        sync: false
-
-  - type: web
     name: resume-frontend
     env: docker
     repo: https://github.com/kvj-085/AI-Powered-Resume-Analyzer
-    region: oregon
     branch: main
     rootDir: frontend
+    dockerfilePath: Dockerfile
     plan: free
+    envVars: []
+
+  - type: web
+    name: resume-backend
+    env: docker
+    repo: https://github.com/kvj-085/AI-Powered-Resume-Analyzer
+    branch: main
+    rootDir: backend
+    dockerfilePath: Dockerfile
+    plan: free
+    envVars:
+      - key: MONGO_URI
+        value: your-mongo-connection-string-here
