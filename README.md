@@ -95,11 +95,10 @@ Below is a screenshot showing the result of uploading a resume for analysis.
 
 ## Deployment & Docker
 
-This project has been **Dockerized** and is currently **deployed on the cloud using Render**.
+This project has been **Dockerized** and runs seamlessly in a local containerized environment.
 
 - Docker ensures consistent environments across local, staging, and production
-- Full deployment via **Render**, enabling automated CI/CD for backend and frontend
-- Uses **MongoDB Atlas** as a secure, cloud-hosted NoSQL database for resume storage
+- Verified working with `docker-compose` for both backend and frontend
+- Due to model size (facebook/bart-large-mnli), deployment to free-tier cloud services exceeds memory limits
+- Can be deployed on platforms like Render or GCP with upgraded memory tiers
 - Environment variables like database credentials are securely managed via `.env` and Render's secret management
-
-
